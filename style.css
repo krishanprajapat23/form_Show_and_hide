@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.d-flex {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.sm-flex {
+  flex: 30%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.hover-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  right: 0;
+  z-index: 11;
+  transition: all 300ms ease-in-out;
+}
+.hover-text.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.copy-icon, .i-icon {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.form-container {
+  font-family: "Roboto", sans-serif;
+}
+.form-container input[type=text],
+.form-container input[type=email],
+.form-container input[type=tel],
+.form-container input[type=url],
+.form-container textarea {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  width: 100%;
+  border: 1px solid #F2F2F2;
+  margin: 5px 0;
+  padding: 10px;
+  height: 25px;
+  line-height: 1.256;
+  background: #F2F2F2;
+  border-radius: 5px;
+}
+.form-container input[type=text]:focus,
+.form-container input[type=email]:focus,
+.form-container input[type=tel]:focus,
+.form-container input[type=url]:focus,
+.form-container textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+.form-container input[type=text]:hover,
+.form-container input[type=email]:hover,
+.form-container input[type=tel]:hover,
+.form-container input[type=url]:hover,
+.form-container textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+.form-container::placeholder {
+  color: #888888;
+}
+.form-container textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+.form-container button {
+  cursor: pointer;
+  border: none;
+  background: #000;
+  color: #FFF;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+.form-container button:hover {
+  background: #2d2c2c;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.form-container .error-text {
+  color: red;
+  font-size: 12px;
+}
+.form-container .ready-continue {
+  margin: 0.5rem 0;
+}
+
+.form-two {
+  display: none;
+}
+
+.form-three {
+  display: none;
+}
+
+.gec-clonner-wrapper {
+  position: relative;
+  background: linear-gradient(247.13deg, #5257E5 0%, #4DC9E6 100%);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.form-container h2 {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+.form-container fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+.form-container label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 15px;
+  cursor: default;
+}/*# sourceMappingURL=style.css.map */
